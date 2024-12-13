@@ -20,12 +20,12 @@ function App() {
         <Routes>
           {/* Admin-only Routes */}
           <Route path="/" element={<Dashboard2 />}>
+            <Route index element={<Vehicles />} />
 
             <Route path="menu-items" element={<MenuItems />} />
         
             <Route path="blogs" element={<Blog />} />
-            <Route path="vehicle" element={<VehicleList />} />
-            <Route path="vehicles" element={<Vehicles/>} />
+           
 
           </Route>
   

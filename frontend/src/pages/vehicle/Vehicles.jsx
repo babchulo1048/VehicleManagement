@@ -139,16 +139,17 @@ const Vehicles = () => {
       accessorKey: "name",
       header: "Name",
     },
-    // {
-    //   accessorKey: "price",
-    //   header: "Price",
-    //   Cell: ({ cell }) => `$${cell.getValue()}`,
-    // },
+    {
+      accessorKey: "price",
+      header: "Price",
+      Cell: ({ cell }) => `$${cell.getValue()}`,
+    },
     {
       accessorKey: "status",
       header: "Status",
       Cell: ({ cell }) => <Typography>{cell.getValue()}</Typography>,
     },
+
     {
         accessorKey: "lastUpdated",
         header: "Last Updated",
